@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:8080";
+const baseURL = "https://citybee-server-6d83x.ondigitalocean.app";
 
 const hideMsgBtn = document.querySelector(".notification > button.delete");
 hideMsgBtn.addEventListener("click", (event) => {
