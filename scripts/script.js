@@ -21,7 +21,7 @@ const showMsg = (msg) => {
 let page = window.location.href.split("/");
 page = page[page.length-1];
 
-if (page == "view-models.html") {
+if (page == "index.html") {
 
     fetch(baseURL + "/models")
     .then((res) => res.json())
