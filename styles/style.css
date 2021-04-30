@@ -1,0 +1,11 @@
+.notification {
+    display: none;
+}
+
+input[type="text"], input[type="number"], div.select {
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+div.select, select {
+    width: 100%;
+}

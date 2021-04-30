@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Model</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+    <div class="columns is-mobile is-centered">
+        <div class="column is-half" >
+            <div class="content is-normal">
+
+                <div class="box"><a class="button" href="view-vehicles.html">View Vehicles</a> <a class="button" href="view-models.html">View Models</a> <a class="button" href="add-vehicle.html">Add Vehicle</a></div>
+
+                <h1>Add Model</h1>
+
+                <div class="notification">
+                    <button class="delete"></button>
+                    <div class="msg"></div>
+                </div>
+
+                <form name="add_model">
+                    <div class="box">
+                        
+                        <label for="name">Model:</label>
+                        <input class="input" type="text" name="model_name" placeholder="Model">
+                        <label for="hour_price">Price per hour:</label>
+                        <input class="input" type="number" name="hour_price" step=0.01 placeholder="Price per hour">
+                        <input class="button" type="submit"></input>
+                    </div>
+                    
+                </form>
+                
+
+            </div>
+        </div>
+      </div>
+
+      <script src="scripts/script.js"></script>
+
+  </body>
+</html>

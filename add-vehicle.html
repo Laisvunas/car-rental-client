@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Vehicle</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+    <div class="columns is-mobile is-centered">
+        <div class="column is-half" >
+            <div class="content is-normal">
+
+                <div class="box"><a class="button" href="view-vehicles.html">View Vehicles</a> <a class="button" href="view-models.html">View Models</a> <a class="button" href="add-model.html">Add Model</a></div>
+
+                <h1>Add Vehicle</h1>
+
+                <div class="notification">
+                    <button class="delete"></button>
+                    <div class="msg"></div>
+                </div>
+
+                <form name="add_vehicle">
+                    <div class="box">
+                        <label for="models">Model:</label>
+                        <div class="select">
+                            <select name="models">
+                                <option selected disabled>Model</option>
+                            </select>
+                        </div>
+                        <label for="country_location">Country Location:</label>
+                        <div class="select">
+                            <select name="country_location">
+                                <option selected disabled>Country Location</option>
+                                <option value="LT">LT</option>
+                                <option value="LV">LV</option>
+                                <option value="EE">EE</option>
+                            </select>
+                        </div>
+                        <label for="number_plate">Number Plate:</label>
+                        <input class="input" type="text" name="number_plate" placeholder="Number Plate">
+                        <input class="button" type="submit"></input>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+      </div>
+
+      <script src="scripts/script.js"></script> 
+
+  </body>
+</html>

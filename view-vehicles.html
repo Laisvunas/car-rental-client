@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Vehicles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+    <div class="columns is-mobile is-centered">
+        <div class="column is-half" >
+            <div class="content is-normal">
+
+                <div class="box"><a class="button" href="view-models.html">View Models</a> <a class="button" href="add-model.html">Add Model</a> <a class="button" href="add-vehicle.html">Add Vehicle</a></div>
+
+                <h1>View Vehicles</h1>
+
+                <div class="notification">
+                    <button class="delete"></button>
+                    <div class="msg"></div>
+                </div>
+
+                <h2>Vehicles</h2>
+
+                <div class="box"><button class="button" id="btn-all">All</button> <button class="button" id="btn-lt">LT</button> <button class="button" id="btn-lv">LV</button> <button class="button" id="btn-ee">EE</button></div>
+
+                <table id="vehicles" class="table is-bordered">
+                    <thead>
+                      <th>Model</th>
+                      <th>Price per hour</th>
+                      <th>Number Plate</th>
+                      <th>Country Location</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+            </div>
+        </div>
+      </div>
+
+    
+      <script src="scripts/script.js"></script>
+  </body>
+</html>
