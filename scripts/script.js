@@ -21,7 +21,7 @@ const showMsg = (msg) => {
 let page = window.location.href.split("/");
 page = page[page.length-1];
 
-if (page == "index.html") {
+if (page == baseURL || page == "" || page == "index.html") {
 
     fetch(baseURL + "/models")
     .then((res) => res.json())
@@ -131,7 +131,7 @@ else if (page == "add-model.html") {
     
     document.forms.add_model.addEventListener("submit", (e) => {
         e.preventDefault();
-        const name = document.forms.add_model.model_name.value;
+        const name = document.forms.add_model.model_name.value.trim();
         const hour_price = document.forms.add_model.hour_price.value;
         if (!name || !hour_price) {
             catchError("Incomplete data submitted."); 
@@ -189,7 +189,7 @@ else if (page == "add-vehicle.html") {
         e.preventDefault();
         const model_id = document.forms.add_vehicle.models.value;
         const country_location = document.forms.add_vehicle.country_location.value;
-        const number_plate = document.forms.add_vehicle.number_plate.value;
+        const number_plate = document.forms.add_vehicle.number_plate.value.trim();
         if (!model_id || !country_location || !number_plate) {
             catchError("Incomplete data submitted."); 
             return;
