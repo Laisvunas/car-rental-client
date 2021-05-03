@@ -27,6 +27,7 @@ if (page == baseURL || page == "" || page == "index.html") {
     .then((res) => res.json())
     .then((data) => {
         if (data && data.length > 0) {
+            data.sort((a, b) => (a.name < b.name ? -1 : 1));
             data.forEach((item) => {
                 const tr = document.querySelector("#models > tbody").insertRow();
                 const td1 = tr.insertCell();
@@ -46,6 +47,7 @@ if (page == baseURL || page == "" || page == "index.html") {
     .then((res) => res.json())
     .then((data) => {
         if (data && data.length > 0) {
+            data.sort((a, b) => (a.name < b.name ? -1 : 1));
             data.forEach((item) => {
                 const tr = document.querySelector("#modelscount > tbody").insertRow();
                 const td1 = tr.insertCell();
