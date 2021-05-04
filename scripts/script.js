@@ -125,6 +125,8 @@ else if (page == "add-model.html") {
             const data = await res.json();
             if (data.id) {
                 showMsg("Model added successfuly.")
+            } else if (data.affectedRows) {
+                showMsg("Such model exists.")
             }
         } catch (err) {
             catchError(err);
