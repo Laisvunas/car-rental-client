@@ -126,7 +126,7 @@ else if (page == "add-model.html") {
             if (data.id) {
                 showMsg("Model added successfuly.")
             } else if (data.affectedRows) {
-                showMsg("Such model exists.")
+                showMsg("Such model exists. Price per hour updated.")
             }
         } catch (err) {
             catchError(err);
